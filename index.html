@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body>
+<!-- Sidebar-->
+<aside class="burger-sidebar">
+    <div class="sidebar-content">
+        <div class="sidebar-header">
+            <img width="15" src="imgradar/close-button-svgrepo-com.svg" onclick="closeSidebar()">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="/frivillig.html">Frivillig</a></li>
+                <li><a href="/omradar.html">Om Radar</a></li>
+                <li><a href="/koncerter.html">Koncerter</a></li>
+                <li><a href="/kontaktos.html">Kontakt Os</a></li>
+                <li><a href="/mitradar.html">Mit Radar</a></li>
+                <li><a href="/blog.html">blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!--Slut Sidebar-->
+
+<!-- Header -->
+<header class="header">
+
+    <div class="header-items">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="imgradar/rigtigrigtig.png" alt="Logo">
+        </a>
+
+        <!-- Burger -->
+        <div class="burger-menu" onclick="openSidebar()">
+            <img width="35" src="imgradar/svg/burger.svg" alt=""></img>
+        </div>
+        <!-- Links -->
+        <nav class="nav">
+            <ul>
+                <li><a href="/spisogbowl.html">Spis & Bowl</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Slut Header -->
+
+<main>
+    <section class="hero" style="background-image: url'imgradar/forside.jpg';">
+        <div class="hero-section">
+            <img src="imgradar/forside1.jpg" alt="Hero Image">
+            <div class="overlay">
+                <h1>Velkommen</h1>
+                <p>Her finder du originale artister under radaren.</p>
+                <a href="koncerter.html" class="button">Se koncerter</a>
+                <div>
+        </div>
+    </section>
+
+
+</main>
+
+<section class="concert-slider">
+    <h2>Koncerter</h2>
+    <p>Her ser du et udvalg af hvilke kommende events, der sker på Radar. Smagen er bred, og der er typisk noget for enhver smag.</p>
+    <div class="slider-container">
+        <div class="slide">
+            <img src="imgradar/rock koncert1.jpg" alt="Punkheads">
+            <h3>Punkheads</h3>
+        </div>
+        <div class="slide">
+            <img src="imgradar/supertonse.jpg" alt="Supertonse">
+            <h3>Supertonser</h3>
+        </div>
+        <div class="slide">
+            <img src="imgradar/anastasia 3.jpg" alt="Anastasia">
+            <h3>Anastasia</h3>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</section>
+
+<section>
+    <div class="grid-container1">
+        <img class="grid-image" src="imgradar/bag om radar.jpg" alt="">
+        <h2 class="grid-heading">Bag om Radar</h2>
+        <div class="grid-text">
+            <p>Radar er et spillested for upcoming artister, der ønsker at afprøve deres kræfter med deres eget præg af nichemusik indenfor Indie, Rock og flere genre af musik.</p>
+            <br>
+            <p>Du vil opleve stemning udover det sædvanlige, møde nye mennesker der også har lysten til at lade sig inpirere af nytænkende ideer. Ligeledes vil du opdage, der mange frivillige som finder stedet meget givende og nærværende.</p>
+            <br>
+            <p>Alt dette spiller en stor rolle i hvorfor Radar har sin helt egen unikke charme.</p>
+        </div>
+    </div>
+</section>
+<br>
+<h3>blog</h3>
+<br>
+<div class="flex-blogartikler">
+    <div class="flex-artikel">
+        <img class="flex-artikel-image" src="imgradar/blogforside.jpg" alt="">
+        <h3>Radar forklarer Niche vs Mainstream</h3>
+    </div>
+
+    <div class="flex-artikel">
+        <img class="flex-artikel-image" src="imgradar/blog2forside.jpg" alt="">
+        <h3>Kendte musikere, der har været under radaren</h3>
+    </div>
+
+    <div class="flex-artikel">
+        <img class="flex-artikel-image" src="imgradar/blog 3 upcoming.jpg" alt="">
+        <h3>Upcoming artister 2025</h3>
+    </div>
+
+</div>
+
+
+<section>
+    
+    <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <h3>Info</h3>
+            <p>
+              Karen Wegeners Gade <br>
+              6, 8000 Aarhus <br>
+              Tlf: 86760344 <br>
+              kontakt(@)radarlive.dk
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Koncerter</a></li>
+              <li><a href="#">Om Radar</a></li>
+              <li><a href="#">Frivillig</a></li>
+              <li><a href="#">Mit Radar</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+
+</section>
+
+
+<script src="js/burger.js"></script>
+</body>
+</html>
