@@ -1,0 +1,532 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #031839;
+    color: white;
+}
+
+p {
+  color: #ffffff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+
+/*Header (fra bowlingsiden projekt 3) ------------------------------------------------------------------------*/
+.header {
+    background: #031839; /*Header farve*/
+    z-index: 10000;
+    padding-left: 25px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    color: #602E9E; /*Link farve*/
+  }
+      .header-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+          .logo img {
+            max-height: 200px;
+            width: auto;
+          }
+
+          /*Burger*/
+          .burger-menu {
+            display: block;
+            cursor: pointer;
+            z-index: 0;
+          }
+            /*Navigations links desktop*/
+            .nav {
+              display: none; /*Display none mobile*/
+              top: 100%;
+              font-family: var(--font-family-heading);
+            }
+                .nav ul {
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+
+                  .nav ul li a {
+                    margin: 0.875rem;
+                    display: inline-flex;
+                    align-items: center;
+                    border-radius: 8px;
+                    transition: all;
+                    transition-duration: 300ms;
+                  }
+
+                  .nav ul li a:hover {
+                    text-decoration: underline;
+                  }
+                  
+                  li a .icon {
+                    margin-left: 5px;
+                    height: 0.925em;
+                  }
+
+                  .nav ul a {
+                    text-decoration: none;
+                    font-size: var(--body-size);
+                    color: var(--color-black);
+                  }
+
+                  .header-button {
+                    display: none; /*Display på mobile*/
+                    padding: 1rem 3rem;             
+                  }
+
+                      .header-button-link {display: none;}
+/*Slut Header ------------------------------------------------------------------------*/
+
+/*Sidebar ------------------------------------------------------------------------*/
+.burger-sidebar {
+    padding: 1.5rem 1.5rem 2rem 2rem;
+    position: fixed;
+    background-color: #ffffff;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 10000;
+    transition: ease-in-out;
+    font-weight: 500;
+    transition-duration: 350ms;  
+    transform: translateX(100%)
+  }
+  
+  .sidebar-nav ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 2px 0px;
+    display: block;
+  }
+  .sidebar-nav ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  
+      .sidebar-header {
+        height: 35px;
+      }
+      .sidebar-header img {
+        float: right;
+      }
+
+.burger-sidebar-active {
+transform: translateX(0%)
+}
+/*Slut Sidebar ------------------------------------------------------------------------*/
+
+
+/*hero section til forside*/
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Adjust the brightness for overlay effect */
+}
+
+.hero-section .overlay {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin: 0;
+   } 
+   
+   .button 
+   {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: #602E9E; /* Lilla baggrund */
+        padding: 12px 25px; /* Gør knappen større */
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 25px; /* Afrundede hjørner */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Effekt ved hover */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Blød skygge */
+        margin-top: 20px;
+
+    }
+    
+    .button:hover {
+        background-color: #602E9E; /* Mørkere lilla ved hover */
+        transform: scale(1.05); /* Gør knappen lidt større */
+    }
+
+/*hero sektion slut/
+
+/*slider*/
+
+.concert-slider {
+    text-align: center;
+    padding: 20px;
+}
+
+.concert-slider p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.slider-controls {
+    margin-top: 10px;
+}
+
+.slider-controls button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.slider-controls button:hover {
+    color: gray;
+}
+
+/*slider*/
+
+
+/* bag om radar forside - grid til bag om radar og frivillig*/
+
+.grid-container1 {
+    display: grid;
+
+    grid-template-areas: 
+    "heading"
+    "image"
+    "text";
+
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container2 {
+    display: grid;
+
+    grid-template-areas: 
+    "heading"
+    "image"
+    "text";
+
+    padding: 20px;
+    text-align: center;
+}
+
+
+.grid-heading {
+
+    grid-area: heading;
+}
+
+.grid-image {
+    grid-area: image;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.grid-text {
+
+    grid-area: text;
+}
+
+
+
+
+
+/* flexbox blog artikler*/
+
+.flex-blogartikler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.flex-artikel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 375px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flex-artikel-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* grid til del din oplevelse*/
+
+.grid-container-profiler {
+    margin: auto;
+    display: grid;
+
+    grid-template-areas: 
+    "heading"
+    "image"
+    "text";
+
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+   
+
+    max-width: 800px;
+    width: 100%;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin: auto;
+    grid-area: image;
+}
+
+.grid-container-profiler h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+
+    grid-area: heading;
+
+}
+
+.grid-container-profiler .text-content {
+    grid-area: text;
+}
+
+.grid-container-profiler .text-content p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.rating span {
+    font-weight: bold;
+    color: #ffbf00;
+}
+
+/*anmeldelsesformular*/
+.form-container {
+    background-color: #031839; /* Formularens baggrundsfarve */
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #ffffffb3;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 3px #0066cc;
+}
+
+button {
+    background-color: #602E9E;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*slut formular*/
+
+/* Footer styling */
+footer {
+    background-color: #602E9E;
+    color: #ffffff;
+    padding: 20px 0;
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-info, .footer-links {
+    flex: 1;
+  }
+  
+  .footer-info h3, .footer-links h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .footer-info p {
+    line-height: 1.5;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-info, .footer-links {
+      margin-bottom: 20px;
+    }
+  }
+
+@media (min-width: 768px) {
+
+    /* om radar grid på desktop*/
+    .grid-container1 {
+        grid-template-areas: 
+        "heading image"
+        "text image"
+        "text image";
+
+        text-align: left;
+    }
+
+
+    /* flexbox blog artikler på desktop*/
+
+    .flex-blogartikler {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* grid til del din oplevelse desktop*/
+    .grid-container-profiler {
+        grid-template-areas:
+        "image heading"
+        "image text";
+
+        text-align: left;
+    }
+
+}
